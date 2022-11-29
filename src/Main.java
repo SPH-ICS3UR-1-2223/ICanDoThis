@@ -11,19 +11,23 @@ public class Main {
 		System.out.println("Please put in a number for an array size");
 		int size=in.nextInt();
 		double[] nums=new double[size];
-		nums= rnd;
+
 		for (int i=0;i<nums.length;i++) {
-//			nums=rnd.nextDouble(size);
-			System.out.print(nums);
+			System.out.print("Enter a number:");
+			nums[i]=in.nextDouble();
+			double total = nums[i];
+			total=total+nums[i];
+			System.out.println(total);
 		}
-	
-		
-		for (double i = 0; i < nums.length; i++) {
-//			double[i]=
+		Arrays.sort(nums);
+		System.out.println("Min:" +nums[0] );
+		System.out.println("Max:" +nums[nums.length-1] );
+		double ave= (nums[nums.length+1]);
+		System.out.println("Average:"+ ave);
 			
 		}
 
 
 	}
 
-}
+
