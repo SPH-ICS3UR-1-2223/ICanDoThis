@@ -9,7 +9,7 @@ public class Variables {
 		System.out.println("please put in a double:");
 		double bruv= in.nextDouble();
 		System.out.println("please put in a string:");
-		
+		bruv= (Int)bruv;
 
 		
 	}
