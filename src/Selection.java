@@ -8,16 +8,16 @@ public class Selection {
 		int boi= in.nextInt();
 		double bruv=0;
 		double temp;
-		if ( boi > 5000 && boi <= 49020) {
+		if (boi > 0 && boi <= 49020) {
 			bruv= boi*0.15;
 			System.out.println("This is how much you owe: \n" +bruv);
 		} else if (boi >49020 && boi <= 98040) {
 			temp = 49020*0.15;
-			bruv= temp; 
+			//bruv= temp; 
 			boi= boi-98040;
-			temp = boi*0.205;
-			bruv= bruv +temp;
-			System.out.println("This is how much you owe: \n" +bruv);
+			temp += boi*0.205;
+			//bruv= bruv +temp;
+			System.out.println("This is how much you owe: \n" +temp);
 		} else if(boi >98040 && boi <=151978 ) {
 			temp = boi*0.15;
 			bruv= temp; 
